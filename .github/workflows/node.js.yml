@@ -28,7 +28,7 @@ jobs:
         run: |
           cd api
           find . -name "*.js" -exec node --check {} +
-     gitleaks-scan:
+  gitleaks-scan:
     runs-on: ubuntu-latest
     needs: compile
     steps:
